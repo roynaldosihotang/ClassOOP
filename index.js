@@ -1,5 +1,5 @@
 const name ='Roy'
-const nik = '31287433005940321'
+const nik = '2323133005940333'
 const bod = '1994-05-30'
 
 
@@ -11,3 +11,7 @@ person1.print();
 var personAge = require('./domain/personAge/personAge.logic')
 var age1 = new personAge (name,nik,bod);
 age1.print();
+
+var validateNik = require('./domain/validateNik/validateNik.logic')
+var validate = new validateNik(name, nik, bod);
+validate.print();
